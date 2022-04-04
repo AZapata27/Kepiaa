@@ -1,0 +1,18 @@
+${AnsiColor.BRIGHT_WHITE}
+  _  __  _____   ____    ___      _         _              ____       _      _   _   ____    _____   ____
+ | |/ / | ____| |  _ \  |_ _|    / \       / \            | __ )     / \    | \ | | |  _ \  | ____| |  _ \
+ | ' /  |  _|   | |_) |  | |    / _ \     / _ \           |  _ \    / _ \   |  \| | | |_) | |  _|   | |_) |
+ | . \  | |___  |  __/   | |   / ___ \   / ___ \          | |_) |  / ___ \  | |\  | |  _ <  | |___  |  __/
+ |_|\_\ |_____| |_|     |___| /_/   \_\ /_/   \_\         |____/  /_/   \_\ |_| \_| |_| \_\ |_____| |_|
+
+Artifact Name: ${AnsiColor.GREEN}${application.title}${AnsiColor.BRIGHT_WHITE}
+GroupId: ${application.groupid}
+Artifact Version: ${AnsiColor.GREEN}(v${application.version})${AnsiColor.BRIGHT_WHITE}
+Build Timestamp: ${application.build.time}
+Powered by Spring Boot: ${AnsiColor.GREEN}${spring-boot.formatted-version}${AnsiColor.BRIGHT_WHITE}
+Java Version:${AnsiColor.GREEN} ${java.version}${AnsiColor.BRIGHT_WHITE}
+
+
+Perfil Activo: ${AnsiColor.BLUE}${spring.profiles.active}
+Context Path: ${server.servlet.context-path}${AnsiColor.BRIGHT_BLACK}
+

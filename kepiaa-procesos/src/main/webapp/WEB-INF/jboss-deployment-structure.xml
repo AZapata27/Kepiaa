@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<jboss-deployment-structure>
+    <!--Esta configuracion se utiliza para excluir todas las implementaciones de logging de Jboss
+     y quedarnos solo con la salida estandar que respeta la configuracion en spring boot
+     es recomendable solo usarlo en desarrollo, y mantener la implementacion de jboss en produccion      -->
+    <!--<deployment>
+        <exclusions>
+            <module name="org.apache.log4j"/>
+            <module name="org.apache.commons.logging"/>
+            <module name="org.slf4j" />
+            <module name="org.slf4j.impl" />
+        </exclusions>
+    </deployment>-->
+</jboss-deployment-structure>
