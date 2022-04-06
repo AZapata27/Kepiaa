@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Kepiaa.iml" filepath="$PROJECT_DIR$/.idea/Kepiaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kepiaa-angular/kepiaa-angular.iml" filepath="$PROJECT_DIR$/kepiaa-angular/kepiaa-angular.iml" />
     </modules>
   </component>
 </project>
