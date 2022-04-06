@@ -1,0 +1,102 @@
+<div class="busqueda-simple" [hidden]="busquedaSimple">
+    <h3>Busqueda Simple</h3>
+
+    <form action="" class="form-busqueda-simple" id="form-busqueda-simple">
+
+        <p-dropdown [options]="indices" class="indices" [(ngModel)]="selectedIndice"
+            (onChange)="cambiarCampoDeBusqueda()" optionLabel="name" name="indice"></p-dropdown>
+
+
+        <input *ngIf="txtBuscar; else MuestraCampoFecha" id="txtBuscar" type="text" class="separacion" pInputText
+            placeholder="Ingrese Dato" required>
+
+
+        <ng-template #MuestraCampoFecha>
+
+            <p-calendar [(ngModel)]="date3" [showIcon]="true" class="formulario__input" inputId="fecha-inicio"
+                [required]="true"></p-calendar>
+
+        </ng-template>
+
+
+        <button pButton type="button" class="separacion" icon="pi pi-search" iconPos="right" label="Buscar"></button>
+
+
+    </form>
+
+    <br>
+    <button id="btnBusquedaAvanzada" (click)="cambiarBusqueda('avanzada')" pButton type="button"
+        class="p-button-success separacion" label="Busqueda Avanzada"></button>
+
+</div>
+
+
+<div class="busqueda-avanzada" [hidden]="busquedaAvanzada">
+
+    <h3>Busqueda Avanzada</h3>
+
+    <div class="acciones-busqueda-avanzada">
+
+        <button pButton type="button" id="btnBusquedaSimple" icon="pi pi-arrow-circle-left" iconPos="left"
+            class="p-button-secondary separacion" (click)="cambiarBusqueda('simple')"
+            label="Volver a Busqueda simple"></button>
+        <button pButton type="button" icon="pi pi-search" iconPos="right" class="p-button-info separacion"
+            label="Buscar"></button>
+        <button pButton type="button" icon="pi pi-times-circle" iconPos="right" class="p-button-danger separacion"
+            label="Limpiar"></button>
+
+
+    </div>
+
+
+
+    <form action="" id="formulario" class="formulario">
+
+        <div class="row">
+            <div class="column">
+                <label for="numero-proceso-ejecutado" class="formulario__label"> Numero de proceso Ejecutado: </label>
+                <input type="text" id="numero-proceso-ejecutado" class="formulario__input" pInputText
+                    name="numero-proceso-ejecutado">
+            </div>
+
+
+            <div class="column">
+                <label for="nombre-proceso" class="formulario__label"> Nombre proceso: </label>
+                <input type="text" id="nombre-proceso" class="formulario__input" pInputText name="nombre-proceso">
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <label for="nombre-sub-proceso" class="formulario__label"> Nombre sub-proceso: </label>
+                <input type="text" id="nombre-sub-proceso" class="formulario__input" pInputText
+                    name="nombre-sub-proceso">
+            </div>
+
+
+            <div class="column">
+                <label for="fecha-inicio" class="formulario__label">Fecha Inicio: </label>
+                <p-calendar [showIcon]="true" class="formulario__input" inputId="fecha-inicio">
+                </p-calendar>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="column">
+                <div class="estado">
+                    <label class="formulario__label">Estado: </label>
+                    <p-dropdown [options]="estados" nclass="formulario__input" optionLabel="name"></p-dropdown>
+                </div>
+               
+            </div>
+
+
+        </div>
+
+    </form>
+    <br>
+
+</div>

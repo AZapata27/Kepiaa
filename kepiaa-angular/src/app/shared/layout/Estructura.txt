@@ -1,0 +1,65 @@
+
+************** Estructura o Arbol de directorios Proyecto Angular ******************** 
+|-- app
+      |-- core
+           |-- guards
+               |-- auth.guard.ts
+           |-- models
+               |-- customer.ts
+               |-- user.ts
+           |-- services
+               |-- service-x.ts
+               |-- service-y.ts
+           |-- enums
+               |-- customer-type.enum.ts
+           |-- utils
+               |-- common.functions.ts
+           |-- interceptors
+               |-- token.interceptor.ts
+               |-- spinner.interceptor.ts
+      |-- shared
+           |-- components
+           |-- pipes
+           |-- directives
+           |-- validators
+           |-- layout
+      |-- features
+          |-- customers
+               |-- customer-page
+                    |-- customer-page.component.html|css|ts
+               |-- customer-detail
+                    |-- customer-detail.component.html|css|ts
+               |-- customer-list
+                    |-- customer-list.component.html|css|ts
+               |-- customers-routing.module.ts
+               |-- customers.module.ts
+          |-- users
+               |-- user-page
+                    |-- user-page.component.html|css|ts
+               |-- user-detail
+                    |-- user-detail.component.html|css|ts
+               |-- user-list
+                    |-- user-list.component.html|css|ts
+               |-- users.routing.module.ts
+               |-- users.module.ts
+      |-- app.component.css
+      |-- app.component.html   
+      |-- app.component.ts
+      |-- app-routing.module.ts
+      |-- app.module.ts
+|-- assets 
+      |-- favicon
+           |-- android-icon-*.png
+           |-- apple-icon-*.png
+           |-- ms-icon-*.png
+           |-- favicon.ico
+      |-- fonts
+           |-- custom-font.woff
+      |-- images
+           |-- logo.png
+           |-- user.png
+|-- environments
+      |-- environment.prod.ts
+      |-- environment.ts
+|-- index.html
+|-- styles.css

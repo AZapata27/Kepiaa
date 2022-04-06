@@ -1,0 +1,39 @@
+body {
+    font-family:Helvetica,sans-serif !important;
+  }
+
+.separacion
+{
+    margin-left: 10px;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+  }
+
+  .card {
+   max-width: 960px;
+  border-radius: 8px;
+  border: 1px solid #c9c9c9;
+  padding-bottom: 10px;
+  }
+ 
+  .formulario
+  {
+    margin: auto;
+     width: 920px;
+  }
+ 
+  .row {
+    display: inline-block;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+   
+}
+.column {
+    display: table-cell;
+    
+}
+

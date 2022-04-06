@@ -1,0 +1,45 @@
+#main-header {
+    background: rgb(164, 219, 245);
+    color: white;
+    height: 90px;
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    z-index: 12;
+    padding-bottom: 120px;
+}
+
+.card-parent {
+    width: auto; 
+    padding: 10px ;
+    border-radius: 8px;
+    border: 1px solid #c9c9c9;
+    margin-top: 40px;
+} 
+
+
+.container {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin-top : 70px;
+}
+
+.contenido
+{
+    width: 100%; 
+}
+
+.imagenes
+{
+    display: inline;
+}
+
+.billete
+{
+    float: right;
+}

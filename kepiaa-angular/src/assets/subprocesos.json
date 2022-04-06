@@ -1,0 +1,15 @@
+ [
+        {
+            "nombre": "subproceso1",
+            "mensaje": "este es el mensaje 1"
+        },
+        {
+            "nombre": "subproceso2",
+            "mensaje": "este es el mensaje 2"
+        },
+        {
+            "nombre": "subproceso3",
+            "mensaje": "este es el mensaje 3"
+        } 
+
+    ]

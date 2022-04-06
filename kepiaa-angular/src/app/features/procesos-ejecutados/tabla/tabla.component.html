@@ -1,0 +1,53 @@
+
+<h2>Resultado Ejecucion de Procesos</h2>
+
+<div class="card centrarContenido">
+    <app-busqueda></app-busqueda>
+</div>
+
+
+<br>
+
+
+<div class="card centrarContenido">
+    <app-procesos></app-procesos>
+</div>
+
+<br>
+
+
+<div class="tabulacion">
+    <div class="card">
+
+<p-table [value]="procesos"  (onRowSelect)="seleccionarFila()"  (onRowUnselect)="deseleccionarFila()" [paginator]="true" sortMode="multiple"  paginatorPosition="both" [scrollable]="true" scrollHeight="600px" [rows]="10" [showCurrentPageReport]="true" selectionMode="single"   responsiveLayout="scroll"
+   currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} registros" [rowsPerPageOptions]="[10]" [(selection)]="procesoSeleccionado">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th pSortableColumn="numeroProcesoEjecutado" >Numero de proceso Ejecutado <p-sortIcon field="numeroProcesoEjecutado"></p-sortIcon></th>
+                    <th pSortableColumn="nombreProceso" >Nombre Proceso <p-sortIcon field="nombreProceso"></p-sortIcon> </th>
+                    <th pSortableColumn="nombreSubproceso">Nombre SubProceso <p-sortIcon field="nombreSubproceso"></p-sortIcon></th>
+                    <th pSortableColumn="fechaInicio">Fecha Inicio <p-sortIcon field="fechaInicio"></p-sortIcon></th>
+                    <th pSortableColumn="EstadoProcesosSubprocesosEnum">Estado <p-sortIcon field="EstadoProcesosSubprocesosEnum"></p-sortIcon></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-proceso>
+                  <tr [pSelectableRow]="proceso" >
+                    <td >{{proceso.numeroProcesoEjecutado}}</td>
+                    <td>{{proceso.nombreProceso}}</td>
+                    <td>{{proceso.nombreSubproceso}}</td>
+                    <td>{{ proceso.fechaInicio }}</td>
+                    <!--  
+
+                        El estado es un ENUM pero mientras se puede usar: estado X
+                         code:  <td>{{proceso.estado}}</td>
+
+                    -->
+                    <td>{{proceso.EstadoProcesosSubprocesosEnum}}</td>
+
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
+
+<app-spinner></app-spinner>

@@ -1,0 +1,40 @@
+
+       [
+	
+		{
+            
+			"procesoXEjecucionConsecutivo": 123453,
+			"numeroProcesoEjecutado": 474,
+			"procesoConsecutivo": 345678,
+			"nombreProceso": "Aplicar movimientos, novedades y liquidar",
+			"nombreSubproceso": " ",
+			"fechaInicio": "2020/02/12",
+			"EstadoProcesosSubprocesosEnum": "EJECUTADO_CON_ERROR'"
+		}
+		,
+		{ 
+            
+			"procesoXEjecucionConsecutivo": 34562333333,
+			"numeroProcesoEjecutado": 47433,
+			"procesoConsecutivo": 4567,
+			"nombreProceso" : " Proceso Liquidacion",
+			"nombreSubproceso": "Aplicar Movimientos",
+			"fechaInicio": "2020/02/13",
+			"EstadoProcesosSubprocesosEnum": "EJECUTADO_CON_ERROR"
+		},
+
+		{
+	
+			"procesoXEjecucionConsecutivo": 4545667,
+			"numeroProcesoEjecutado": 47433,
+			"procesoConsecutivo": 345678,
+			"nombreProceso": " Tercer procesos...",
+			"nombreSubproceso": "Sin liquidacion",
+			"fechaInicio":  "2020/02/14",
+			"EstadoProcesosSubprocesosEnum": "EJECUTADO_CON_ERROR"
+		}
+
+
+	]
+  
+  
